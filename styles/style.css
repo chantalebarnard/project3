@@ -1,0 +1,291 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*==============
+General Styles.....................
+==============*/
+h1, h2, h3 {
+	margin: 0;
+}
+h1 {
+	padding: 50px;
+	font-size:50px;
+}
+h2 {
+	padding: 20px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+p {
+	margin: 0;
+}
+body {
+	background-color: #e9e9e9;
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 2px;
+	/*margin-bottom: 75px;*/
+}
+header {
+ margin-top:75px;
+}
+.wrapper {
+	max-width: 880px;
+	margin: 0 auto;
+}
+
+/*==============
+Index Styles.....................
+==============*/
+
+.hero {
+	text-align: center;
+	position: relative;
+	display: block;
+	margin: 0;
+}
+
+.indexBody{
+background-image: linear-gradient(rgba(255,255,255, 0.1), rgba(255,255,255,0.9)), url(../assets/worldmap.jpg);
+background-size: cover;
+background-position:center;
+background-repeat: no-repeat;
+height:100vh;
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.indexH1{
+color:white;
+}
+.chooseCountry {
+	display: flex;
+	flex-wrap: wrap;
+}
+.country {
+	/*width: 20%;*/
+	border: 2px solid rgba(255,255,255,0.5);
+	border-radius: 4px;
+	padding: 30px;
+	margin: 20px;
+	transition: all 0.3s;
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.1)
+}
+.country:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 2px solid steelblue;
+	border-radius:50px;
+}
+.country img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.country h2 {
+	color: white;
+	font-weight: 300px;
+}
+.klingon img {
+	background-color: red;
+}
+
+/*==============
+Quiz Styles.....................
+==============*/
+
+main {
+	background-color: white;
+	border-radius: 10px;
+}
+fieldset {
+	border-radius: 10px;
+	border: none;
+	margin-top: 30px;
+	padding-bottom: 30px;
+}
+label {
+	margin-top: 30px;
+}
+.imageChoice img {
+	margin: 20px;
+}
+.image{
+	border-radius:5px;
+	cursor:pointer;
+	transition: all 0.3s;
+}
+.chosen{
+	box-shadow: 0px 0px 5px 10px rgba(116,237,132,0.8);
+}
+.chosenMP{
+	border:1px solid green;
+	transition: all 0.3s;
+}
+.chosenMP:hover{
+	color:gray;
+	cursor: pointer;
+}
+.not{
+	box-shadow:none;
+	border:none;
+	border-radius: 15px;
+}
+.radioHidden{
+	visibility:hidden;
+}
+.buttonOff{
+	display:none;
+}
+.hide{
+	display:none;
+}
+.imgTop{
+top:-1000px;
+}
+button, input[type="submit"], input[type="button"] {
+	padding:10px 20px;
+	border-radius: 4px;
+	background-color: lightgreen;
+	border: none;
+	color: white;
+	transition: all 0.3s;
+	margin: 10px;
+}
+.topLanguage{
+	padding:10px 20px;
+	border-radius: 4px;
+	background-color: lightgreen;
+	border: none;
+	color: white;
+	transition: all 0.3s;
+	margin: 10px;
+}
+.topLanguage:hover{
+	opacity:0.7;
+}
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+	opacity: 0.7;
+}
+.newButtons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height:100px;
+	align-items: center;
+}
+.newButtons a{
+	padding-top: 11.5px;
+	padding-bottom: 11.5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-radius: 4px;
+	background-color: lightgreen;
+	border: none;
+	color: white;
+	transition: all 0.3s;
+}
+.newButtons a:hover{
+	opacity:0.7;
+}
+.hideAll{
+	display:none;
+}
+.displayAll{
+	display:block;
+}
+.nextOne, .nextTwo{
+	display:none;
+	background-color:lightgreen;
+	padding:10px 20px;
+	border-radius:5px;
+	margin:15px 0px;
+	color:white;
+}
+.nextOne:hover, .nextTwo:hover{
+	cursor:pointer;
+}
+#sentence{
+	display:none;
+}
+.sentenceComplete{
+	margin-top:20px;
+}
+#inputWord{
+	display:none;
+}
+#correctAnswer3 p{
+	display:flex;
+	flex-direction: column;
+}
+footer{
+	position:relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:100vh;
+	transition:all 1s;
+	background-color: white;
+	border-radius:10px;
+}
+.footer-content{
+	position:absolute;
+	margin-top:20px;
+}
+.footer-height{
+	height:0vh;
+}
+.results{
+	padding:0px;
+}
+.BGNone{
+	background-color:rgba(0,0,0,0);
+}
+
+/*==============
+Media Queries.....................
+==============*/
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .country {
+        /*width: 20%;*/
+        margin:5px auto;
+    }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .country {
+        width: 40%;
+        margin: 5px auto;
+        padding: 10px;
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .country {
+        width: 45%;
+        margin: 5px auto;
+    }
+    label {
+        display: flex;
+        justify-content: center;
+    }
+    .imageChoice img {
+        margin: 10px;
+    }
+    footer{
+    	background-color:#e9e9e9;
+    }
+    .footer-content{
+    	left:50%;
+    	transform:translateX(-50%);
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learn French</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<main class="displayAll hideAll wrapper">
+		<header>
+			<h1>Let's Learn Italian!</h1>
+			<a class="topLanguage" href="index.html">Back To Language Select</a>
+		</header>
+		<form action="">
+			<fieldset class="multipleChoice" id = "mp1">
+				<h2>What Is The Word For <em>Please</em>?</h2>
+				<label for="q1One" id="correct1" class="label1 chosenMP not">Per Favore</label>
+				<input class="answer1 radioHidden" type="radio" name="q1" id="q1One" data-score="1">
+				<label for="q1Two" class="label1 chosenMP not">Prego</label>
+				<input class="answer1 radioHidden" type="radio" name="q1" id="q1Two" data-score="0">
+				<label for="q1Three" class="label1 chosenMP not">Grazie</label>
+				<input class="answer1 radioHidden" type="radio" name="q1" id="q1Three" data-score="0">
+				<label for="q1Four" class="label1 chosenMP not">Scusa</label>
+				<input class="answer1 radioHidden" type="radio" name="q1" id="q1Four" data-score="0">
+			</fieldset>
+<!-- ...................................................-->
+			<fieldset class="sentence hide">
+				<h2>Complete the Following Sentence:</h2>
+				<label for="">Non
+					<input class = "answer2" type="text" name = "q2" autocomplete="off"> Italiano
+					<p id="sentence">Parlo</p>
+				</label>
+				<p class="sentenceComplete"><em>I Don't Speak Italian</em></p>
+				<label for="nextOne" class="nextOne">Next Question</label>
+					<input class="nextOne radioHidden" id="nextOne" type="radio">
+			</fieldset>
+<!-- ...................................................-->			
+			<fieldset class="imageChoice hide" id="imageChoice">
+				<h2>Which Image Best Represents The Word <em>Bagno</em>?</h2>
+				<label for="q3One">
+					<input class="radioHidden" type="radio" name="q3" id="q3One" data-score="0">
+					<img class="image chosen not" src="assets/italy_backyard.jpeg" alt="">	
+				</label>
+				<label for="q3Two" id="correct3">
+					<input class="radioHidden" type="radio" name="q3" id="q3Two" data-score="1">
+					<img class="image chosen not" src="assets/italy_bathroom.jpg" alt="">	
+				</label>
+				<label for="q3Three">
+					<input class="radioHidden" type="radio" name="q3" id="q3Three" data-score="0">
+					<img class="image chosen not" src="assets/italy_kitchen.jpg" alt="">
+				</label>
+				<label for="q3Four">
+					<input class="radioHidden" type="radio" name="q3" id="q3Four" data-score="0">
+					<img class="image chosen not" src="assets/italy_stairs.jpg" alt="">	
+				</label>
+			</fieldset>
+
+<!-- ...................................................-->
+
+			<fieldset class="inputWord hide">
+				<h2>How Do You Say <em>"Hello" and "Goodbye"</em>?</h2>
+				<label for="">
+					<input class = "answer4" type="text" name = "q4" autocomplete="off">
+				</label>
+					<p id="inputWord">Ciao</p>
+				<label class="nextTwo" for="nextTwo">Next Question</label>
+					<input class="nextTwo radioHidden" id="nextTwo" type="radio">
+			</fieldset>
+
+<!-- ...................................................-->
+
+			<fieldset class="multipleChoice2 hide">
+				<h2>What Is The Word For <em>"Goodnight"</em>?</h2>
+				<label for="q5One" class="label2 chosenMP not">Buonasera</label>
+				<input class="answer5 radioHidden radioHidden" type="radio" name="q5" id="q5One" data-score="0">
+				<label for="q5Two" class="label2 chosenMP not">Buongiorno</label>
+				<input class="answer5 radioHidden radioHidden" type="radio" name="q5" id="q5Two" data-score="0">
+				<label for="q5Three" class="label2 chosenMP not" id="correct5">Buonanotte</label>
+				<input class="answer5 radioHidden radioHidden" type="radio" name="q5" id="q5Three" data-score="1">
+				<label for="q5Four" class="label2 chosenMP not">Arrivederci</label>
+				<input class="answer5 radioHidden radioHidden" type="radio" name="q5" id="q5Four" data-score="0">
+			</fieldset>
+			<div class="submit-container hide">
+				<input type="submit" value="submit" class="submitScore">
+			</div>
+		</form>
+	</main>
+	<footer class="footer-height wrapper">	
+		<div class="footer-content">
+			<h2 class="results"></h2>
+	        <div class="answerOne" id="correctAnswer1"></div>
+	        <div class="answerTwo" id="correctAnswer2"></div>
+	        <div class="answerThree" id="correctAnswer3"></div>
+	        <div class="answerFour" id="correctAnswer4"></div>
+	        <div class="answerFive" id="correctAnswer5"></div>
+			
+			<div class="newButtons">
+	        	<div class="restart BGNone"></div>
+	        	<div class="backToHome BGNone"></div>		
+			</div>
+		</div>	
+	</footer>	
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="scripts/scriptsItaly.js"></script>
+</body>
+</html>
